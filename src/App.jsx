@@ -6,7 +6,7 @@ import './App.scss'
 const cats = [
   { name: 'All' },
   { name: 'Mountains' },
-  { name: 'See' },
+  { name: 'Sea' },
   { name: 'Architecture' },
   { name: 'Cities' }
 
@@ -45,7 +45,7 @@ console.log(categoryId)
           {
             cats.map((cat, i)=> (
               <li
-                key={cat.id}
+                key={cat.name}
                 onClick={()=> setCategoryId(i)}
                 className={categoryId === i ? 'active' : '' }>
                 {cat.name}
